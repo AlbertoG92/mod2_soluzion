@@ -1,0 +1,146 @@
+/* Spaziatura orizzontale tra i bordi della sezione e i bordi della finestra del Browser*/
+/* e la spaziatura tra il testo in ciascuna sezione e i bordi della sezione */
+/* sono stati gestiti con i margin e il padding */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  border-width: 1px; 
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  background-color: rgb(185,179,175);
+}
+
+  .riga {
+    width: 100;
+  }
+
+  .Titolo {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    
+  }
+
+.contenitore{
+  position: relative;
+  top:60px;
+  margin: 15px; 
+ }
+
+ .oggetto{
+  position: relative;
+  top: 0;
+  background-color:#999999;
+  margin: 15px;
+  padding: 25px;
+  border: 3px solid;
+}
+
+.oggetto p {
+  margin-top: 18px;
+  text-align: justify;
+  font-size: 100%;
+}
+/* Ognuna delle 3 sezioni deve avere un area del titolo della sezione(Pollo, Manzo, Pesce) */
+/* posizionata in lato a destra della sezione usando il posizionamento relativo o assoluto e Offset */
+.titolo-oggetto {
+  position: absolute;
+  background: violet;
+  border-bottom: 2px solid;
+  top: 0;
+  border-left: 2px solid;
+  right: 0px;
+  padding: 6px 90px;
+}
+
+#primo-titolo {
+  background-color: blue;
+}
+
+#secondo-titolo {
+  background-color: #d598d5;
+}
+
+#terzo-titolo {
+  background-color: #d4d4d4;
+}
+
+h1   {
+  color: rgb(255,0,0);
+  font-size: 20px;
+}
+
+p {
+  color: yellow;
+  border-width: 2px;
+  font-size: 10px;
+  font-style: italic;
+}
+
+
+/* Layout Desktop */
+@media screen and (min-width:992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+   float:left;
+ }
+ .col-lg-1 {
+   width: 8.33%;
+ }
+ .col-lg-2 {
+   width: 16.66%;
+ }
+ .col-lg-3 {
+   width: 25%;
+ }
+ .col-lg-4 {
+   width: 33.33%;
+ }
+ .col-lg-5 {
+   width: 41.66%;
+ }
+ .col-lg-6 {
+   width: 50%;
+ }
+ .col-lg-7 {
+   width: 58.33%;
+ }
+ .col-lg-8 {
+   width: 66.66%;
+ }
+ .col-lg-9 {
+   width: 74.99%;
+ }
+ .col-lg-10 {
+   width: 83.33%;
+ }
+ .col-lg-11 {
+   width: 91.66%;
+ }
+ .col-lg-12 {
+   width: 100%;
+ }
+ }
+ 
+/* Layout Tablet */
+@media screen and (min-width:768px) and (max-width:991px){
+  .col-lg-4 {
+  float:left;
+  width: 50%;
+}
+.col-lg-tablet{
+  width: 100%;
+  float: left;
+}
+}
+
+/* Layout Smartphone */
+@media screen and  (max-width:767px) {
+  .col-lg-4 {
+  float: left;
+  width: 100%;
+}
+}
